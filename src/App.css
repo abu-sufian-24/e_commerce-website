@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #00a97f;
+  --light: rgba(133, 198, 218, 255);
+  --dark: rgba(13, 13, 10, 255);
+  --darker: rgba(234, 157, 90, 255);
+  --lighter: #cbd6cf;
+  --lighter1: #c3dacc86;
+  --lighter2: #e4f0e9da;
+  --darken: #cca27e;
+  --color: orangered;
+  --search: #ff6000;
+  --primary1: #2b3d4c;
+  --primary2: #354d61;
+}
+
+.header {
+  background-color: var(--primary1);
+}
+.active {
+  font-weight: 600;
+  color: crimson;
+}
+.inactive {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+p {
+  font-size: 14px;
+}
+
+.header_top_strip {
+  background-color: var(--lighter);
+}
+.header_top_strip a {
+  text-decoration: none;
+}
+.link-style {
+  text-decoration: none;
+}
+
+.link-style:hover {
+  color: crimson;
+}
+
+.footer {
+  background-color: var(--lighter);
+}
+.pay img {
+  transition: 0.5s ease;
+}
+.pay img:hover {
+  transform: translateY(-8px);
+}
+/* home */
+.banner {
+  background-color: white;
+}
+
+.banner .back-details {
+  background: url(/src/assets/images/back.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.banner .back-details h1 {
+  font-size: 52px;
+}
+.banner .back-details h2 {
+  font-size: 32px;
+}
+
+.banner .back-details .p-tag {
+  color: var(--primary1);
+  border: 1px solid wheat;
+  background-color: khaki;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 10px;
+  transform: translateY();
+}
+/* hero */
+.hero .hero-details img {
+  padding: 5px 0;
+  width: 50px;
+}
+
+.product h1 {
+  color: coral;
+}
+
+/* Product Card Styles */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.product-image {
+  object-fit: cover;
+  height: 200px;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  opacity: 0.9;
+}
+
+/* Card Text Styling */
+.card-brand {
+  font-size: 14px;
+  color: #888;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-status {
+  font-size: 16px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #666;
+}
+
+.repair-details {
+  background: url(/src/assets/images/banner/b2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.repair-details button {
+  background-color: var(--darker);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+  padding: 8px 16px;
+  margin-top: 30px;
+}
+
+.repair-details button:hover {
+  border: 1px solid var(--darken);
+  background-color: transparent;
+}
+
+.arrival {
+  height: 300px;
+}
+.arrival img {
+  height: 250px;
+}
+
+.hot-deals {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.hot-deals .card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hot-deals .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hot-deals .card-body {
+  padding: 20px;
+}
+
+.hot-deals .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hot-deals .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hot-deals img {
+  border-radius: 10px 0 0 10px;
+  object-fit: cover;
+}
+
+.hot-deals button {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hot-deals button:hover {
+  background-color: #e64a19;
+}
+
+.hot-deals a {
+  text-decoration: none;
+}
+
+.hot-deals a button {
+  box-shadow: 0px 4px 10px rgba(255, 87, 34, 0.5);
+}
+
+.hot-deals a button:hover {
+  box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.7);
+}
+
+.blogs {
+  background-color: #f4f4f9;
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+}
+
+.blogs h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.blogs p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.blogs .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogs .card img {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blogs .card-body {
+  padding: 1rem;
+}
+
+.blogs .card-text {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.blogs button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogs button:hover {
+  background-color: #e64a19;
+  box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.5);
+}
+
+.blogs a {
+  text-decoration: none;
+}
+
+.news-letter {
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 10px;
+  padding: 3rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.news-letter h2 {
+  font-size: 2rem;
+  color: #333; /* Dark grey heading */
+  margin-bottom: 1rem;
+}
+
+.news-letter h5 {
+  font-size: 1rem;
+  color: #555; /* Medium grey for subtext */
+}
+
+.news-letter h5 a {
+  color: #007bff; /* Blue for link */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.news-letter h5 a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+#news-input {
+  border: 2px solid #ddd;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#news-input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-radius: 0 5px 5px 0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .input-group-text:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.3); 
+} */
+
+.details {
+  align-items: center;
+}
