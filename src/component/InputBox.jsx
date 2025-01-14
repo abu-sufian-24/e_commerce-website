@@ -13,7 +13,7 @@ const InputBox = () => {
           <div className="col-md-4">
             <div className="d-flex flex-column align-items-center">
               <h2 className='mb-3'>Sign Up for a newsletter</h2>
-              <h5>Get email updates on all our <Link>special offers</Link></h5>
+              <h5>Get email updates on all our <Link to={"/shop"}>special offers</Link></h5>
             </div>
           </div>
           <div className="col-md-8 details d-flex flex-column justify-content-center">

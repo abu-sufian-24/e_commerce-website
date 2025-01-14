@@ -26,7 +26,7 @@ const NewArrivals = () => {
               <p className="product-price">
                 <strike>${product.rate}</strike>
               </p>
-              <Link to="/shop" className="btn btn-primary view-product-btn">
+              <Link to="/shop" className="btn text-white btn-primary view-product-btn">
                 View Product
               </Link>
             </div>

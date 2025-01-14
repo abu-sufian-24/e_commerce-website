@@ -26,8 +26,8 @@ const FeaturedProduct = () => {
               <p className="product-price">
                 <strike>${product.rate}</strike>
               </p>
-              <Link to="/shop" className="btn btn-primary view-product-btn">
-                View Product
+              <Link to="/shop" className="btn text-white btn-primary view-product-btn">
+                Shop Product
               </Link>
             </div>
           </div>
