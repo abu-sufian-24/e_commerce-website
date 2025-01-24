@@ -1,0 +1,60 @@
+
+Documentation for ReactCart
+
+1. Project Overview
+ReactCart is a frontend e-commerce template built using React and Bootstrap 5. It is fully responsive and follows modern design principles.
+
+2. Features
+Built with React and Bootstrap 5.
+Fully responsive design.
+User-friendly interface.
+Dynamic cards and menus.
+Ready-to-use components.
+
+3. Installation Instructions
+Requirements:
+Node.js (version 16 or higher)
+npm or yarn
+Steps to Run the Project Locally:
+Download the project:
+Extract the downloaded .zip file.
+
+Navigate to the project directory:
+
+cd your-project-folder
+Install dependencies:
+npm install
+or
+yarn install
+Run the development server:
+npm start
+or
+yarn start
+Note: The default server address is http://localhost:3000.
+
+4. Customization
+1. Styling:
+All styles are managed with Bootstrap 5 and custom CSS.
+To change the design, edit the src/App.css file.
+2. Components:
+All reusable components are stored in the src/components/ folder.
+Example: Edit the ProductCard.js component to manage product data.
+3. API Integration (if applicable):
+API URLs and configurations can be found in the src/config.js file.
+
+
+5. Deployment
+To deploy the project, you can use hosting services like Netlify, Vercel, or any other static hosting platform.
+
+Steps:
+Build the project:
+npm run build
+Upload the build folder to your hosting service.
+
+6. Support
+If you have any questions or face any issues, feel free to contact me directly via the ThemeForest messaging system or via my email.
+Email: abusufian300400@gmail.com
+
+7. License
+This template complies with ThemeForest’s licensing policies. You can customize and use it according to the provided guidelines.
+

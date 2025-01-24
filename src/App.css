@@ -94,17 +94,18 @@ p {
 }
 
 .banner .back-details {
-  background: url(/src/assets/images/bac.webp);
+  background: url(/src/assets/images/logo1.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
   width: 100%;
   object-fit: cover;
+  opacity: 0.9;
 }
 .banner .back-details h1 {
   font-size: 82px;
-  color: black;
-  margin-top: 200px;
+  color: #fea301;
+  margin-top: 80px;
 }
 /* responsive */
 @media (max-width: 768px) {
@@ -114,17 +115,11 @@ p {
 }
 .banner .back-details h2 {
   font-size: 32px;
-  color: black;
+  color: #fff;
 }
 .banner .back-details p {
-  color: black;
+  color: #fea301;
 }
-
-/* hero */
-/* .hero .hero-details {
-  padding: 5px 10px;
-  width: 60px;
-} */
 
 .product h1 {
   color: coral;
