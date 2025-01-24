@@ -1,5 +1,5 @@
 import Layout from "./component/Layout"
-import './app.css'
+import './App.css'
 import { BrowserRouter, Route } from "react-router"
 import { Routes } from "react-router"
 import Home from "./pages/Home"
@@ -14,18 +14,9 @@ import Wishlist from "./pages/Wishlist"
 import Cart from "./pages/Cart"
 import ShopContext from "./component/ShopContext"
 import Details from "./pages/Details"
-
 import Register from "./pages/Register"
 
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
 
-//   React.useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
-
-//   return null;
-// }
 
 function App() {
   return (
