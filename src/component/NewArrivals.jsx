@@ -19,7 +19,6 @@ const NewArrivals = () => {
               style={{ height: '300px', objectFit: 'cover' }}
               alt={product.name}
             />
-
             <div className="card-body text-center">
               <p className="card-brand mb-2">{product.brand}</p>
               <h5 className="product-name mb-3">{product.name}</h5>

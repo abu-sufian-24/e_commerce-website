@@ -7,7 +7,7 @@ import playstore from '../assets/images/pay/play.jpg'
 import appstore from '../assets/images/pay/app.jpg'
 import visa from '../assets/images/pay/pay.png'
 
-function Fotter() {
+function Footer() {
   return (
     <>
       <footer className="footer p-5">
@@ -97,4 +97,4 @@ function Fotter() {
   )
 }
 
-export default Fotter
+export default Footer

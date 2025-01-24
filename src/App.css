@@ -15,6 +15,7 @@
   --primary2: #354d61;
 }
 
+/* header css styling */
 .header {
   background-color: var(--primary1);
 }
@@ -73,31 +74,11 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Bounce Animation */
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-.bounce {
-  animation: bounce 1s infinite;
-}
-
 .link-style:hover {
   color: crimson;
 }
 
+/* footer styling */
 .footer {
   background-color: var(--lighter);
 }
@@ -107,7 +88,7 @@ p {
 .pay img:hover {
   transform: translateY(-8px);
 }
-/* home */
+/* home styling*/
 .banner {
   background-color: white;
 }
@@ -125,6 +106,7 @@ p {
   color: black;
   margin-top: 200px;
 }
+/* responsive */
 @media (max-width: 768px) {
   .banner .back-details h1 {
     font-size: 30px;
@@ -139,10 +121,10 @@ p {
 }
 
 /* hero */
-.hero .hero-details img {
+/* .hero .hero-details {
   padding: 5px 10px;
   width: 60px;
-}
+} */
 
 .product h1 {
   color: coral;
@@ -193,20 +175,8 @@ p {
   font-size: 16px;
   color: #666;
 }
-/* blog */
 
-.blog-wrapper {
-  background: url(/src/assets/images/banner/b19.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 40vh;
-  justify-content: center;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-}
-
+/* repair styling */
 .repair-details {
   background: url(/src/assets/images/banner/b2.jpg);
   background-size: cover;
@@ -214,7 +184,6 @@ p {
   height: 40vh;
   justify-content: center;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -233,11 +202,11 @@ p {
   background-color: transparent;
 }
 
+/* hot-deals styling */
 .hot-deals {
   background-color: #f8f9fa;
   border-radius: 10px;
 }
-
 .hot-deals .card {
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -293,6 +262,18 @@ p {
 
 .hot-deals a button:hover {
   box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.7);
+}
+
+/* blog */
+.blog-wrapper {
+  background: url(/src/assets/images/banner/b19.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .blogs {
@@ -353,33 +334,33 @@ p {
 .blogs a {
   text-decoration: none;
 }
-
+/* news-letter  */
 .news-letter {
   background-color: var(--lighter2);
   border-radius: 10px;
   padding: 3rem 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .news-letter h2 {
   font-size: 2rem;
-  color: #333; /* Dark grey heading */
+  color: #333;
   margin-bottom: 1rem;
 }
 
 .news-letter h5 {
   font-size: 1rem;
-  color: #555; /* Medium grey for subtext */
+  color: #555;
 }
 
 .news-letter h5 a {
-  color: #007bff; /* Blue for link */
+  color: #007bff;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .news-letter h5 a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3;
 }
 
 #news-input {
@@ -412,7 +393,6 @@ p {
 }
 
 /* shop start */
-
 .shop-banner {
   background: url(/src/assets/images/banner/b1.jpg);
   background-size: cover;
@@ -435,7 +415,7 @@ p {
 
 /* Remove underline from all links globally */
 a {
-  text-decoration: none; /* No underline for links */
+  text-decoration: none;
 }
 
 a:hover {
@@ -446,7 +426,7 @@ a:hover {
 .card p,
 .card h5,
 .card button {
-  text-decoration: none; /* Ensure no underline appears for text or buttons */
+  text-decoration: none;
 }
 
 /* Button styles */
@@ -465,41 +445,23 @@ a:hover {
 }
 
 .myButton {
-  background-color: #ea9d5a;
-  color: white;
   padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .myButton:hover {
-  background-color: #e07b4f;
+  background-color: #0056b3;
 }
 
 .myButton.red {
-  background-color: #d9534f;
-}
-
-.myButton.red:hover {
-  background-color: #c9302c;
-}
-
-.myButton:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* React Stars */
-.ReactStars__stars {
-  margin: 0;
-  padding: 0;
-}
-
-.ReactStars__star {
-  color: #ea9d5a;
+  background-color: #dc3545;
+  color: #fff;
 }
 
 /* Card image styling */
@@ -894,27 +856,6 @@ h5 {
   color: #fff;
 }
 
-/* Add to Cart Button */
-.myButton {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.myButton:hover {
-  background-color: #0056b3;
-}
-
-.myButton.red {
-  background-color: #dc3545;
-  color: #fff;
-}
-
 /* More Products Section */
 h2.text-center {
   font-size: 1.8rem;
@@ -1099,7 +1040,7 @@ button#button-link:hover {
     margin-top: 20px;
   }
 }
-
+/* about page styling */
 .about-container {
   .about-wrapper {
     padding: 5rem;

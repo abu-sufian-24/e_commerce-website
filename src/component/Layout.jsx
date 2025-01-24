@@ -1,6 +1,7 @@
 import { Outlet } from "react-router"
-import Fotter from "./Fotter"
+
 import Header from "./Header"
+import Footer from "./Footer"
 
 
 
@@ -9,7 +10,7 @@ function Layout() {
     <>
       <Header />
       <Outlet />
-      <Fotter />
+      <Footer />
     </>
   )
 }

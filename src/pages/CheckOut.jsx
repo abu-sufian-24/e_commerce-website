@@ -94,7 +94,7 @@ const CheckOut = () => {
               </div>
               <div className="col-md-6">
                 <label htmlFor="inputPassword" className="form-label">Password</label>
-                <input type="password" id="inputPassword" className="form-control" required />
+                <input type="password" id="inputPassword" className="form-control" autoComplete='current-password' required />
               </div>
               <div className="col-12">
                 <label htmlFor="inputAddress" className="form-label">Address</label>

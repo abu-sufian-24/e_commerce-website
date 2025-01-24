@@ -1,10 +1,11 @@
-import Layout from "./component/Layout"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import Layout from "./component/Layout"
 import { BrowserRouter, Route } from "react-router"
 import { Routes } from "react-router"
 import Home from "./pages/Home"
 import Shop from "./pages/Shop"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -30,13 +31,12 @@ function App() {
               <Route path='blog' element={<Blog />} />
               <Route path='about' element={<About />} />
               <Route path='contact' element={<Contact />} />
-              <Route path='Wishlist' element={<Wishlist />} />
+              <Route path='wishlist' element={<Wishlist />} />
               <Route path='login' element={<Login />} />
-              <Route path='Cart' element={<Cart />} />
+              <Route path='cart' element={<Cart />} />
               <Route path='details' element={<Details />} />
-              <Route path='chekOut' element={<CheckOut />} />
+              <Route path='cheekOut' element={<CheckOut />} />
               <Route path='register' element={<Register />} />
-
             </Route>
           </Routes>
         </BrowserRouter>

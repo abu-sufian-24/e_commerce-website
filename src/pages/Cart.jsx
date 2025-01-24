@@ -73,7 +73,7 @@ function Cart() {
                         <b>${totalAmount}</b>
                       </p>
                       <button
-                        onClick={() => navigate("/chekOut")}
+                        onClick={() => navigate("/cheekOut")}
                         className="checkout-btn"
                       >
                         {isMobile ? "Check Out" : "Proceed to Checkout"}

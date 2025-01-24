@@ -4,7 +4,7 @@ import Hero from '../component/Hero';
 import FeaturedProduct from '../component/FeaturedProduct';
 import NewArrivals from '../component/NewArrivals';
 import HotProduct from '../component/HotProduct';
-import Customur from '../component/Customur';
+import Customer from '../component/Customer';
 import InputBox from '../component/InputBox';
 
 function Home() {
@@ -12,7 +12,6 @@ function Home() {
     <>
       <section className="banner">
         <div className="container-2xl mx-auto px-3 px-md-5">
-
           <div className="back-details p-3 p-md-5 d-flex flex-column  text-center ">
             <h1 className=" ">Super Value Deals</h1>
             <h2 className="fs-4 fs-md-3">On all products</h2>
@@ -23,14 +22,12 @@ function Home() {
               </Link>
             </div>
           </div>
-
         </div>
       </section>
-
-
-
+      {/* hero section start */}
       <Hero />
 
+      {/* featured product start */}
       <section className="featured-products p-4">
         <div className="container-2xl mx-auto ">
           <div className="row">
@@ -43,7 +40,7 @@ function Home() {
         </div>
       </section>
 
-
+      {/* Repair Services start */}
       <section className="repair-services p-5">
         <div className="container-2xl mx-auto">
           <div className="row ">
@@ -53,13 +50,12 @@ function Home() {
               <button>
                 <Link to={'/blog'} className=' text-white text-decoration-none'>Explore Now</Link>
               </button>
-
             </div>
           </div>
         </div>
       </section>
 
-
+      {/* new arrival start */}
       <section className="featured-products p-4">
         <div className="container-2xl mx-auto ">
           <div className="row">
@@ -71,9 +67,8 @@ function Home() {
           <NewArrivals />
         </div>
       </section>
-
       <HotProduct />
-      <Customur />
+      <Customer />
       <InputBox />
     </>
 

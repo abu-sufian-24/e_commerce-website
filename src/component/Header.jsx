@@ -14,7 +14,7 @@ function Header() {
   const location = useLocation()
   return (
     <>
-
+      {/* fast header */}
       <header className="header_top_strip p-1 shadow-sm">
         <div className="container-xxl">
           <div className="row align-items-center">
@@ -38,7 +38,7 @@ function Header() {
           </div>
         </div>
       </header>
-
+      {/* seconde header */}
       <header className="text-uppercase sticky-top px-3 pt-1 header">
         <div className="container-2xl mx-auto">
           <div className="row align-items-center">
@@ -62,10 +62,9 @@ function Header() {
                 </button>
               </div>
             </div>
-
             {/* Icons */}
             <div className="col-12 d-flex justify-content-center align-items-center mt-2 d-md-none">
-              <Link to="/Wishlist" className="mx-2">
+              <Link to="/wishlist" className="mx-2">
                 <HiOutlineInboxArrowDown className="fs-3" />
               </Link>
               <Link to="/Login" className="mx-2">
@@ -150,7 +149,7 @@ function Header() {
               <Link to="/Login" className="mx-2">
                 <IoMdContact className="fs-3" />
               </Link>
-              <Link to="/Cart" className="mx-2 position-relative">
+              <Link to="/cart" className="mx-2 position-relative">
                 <FaCartPlus className="fs-3 cart-icon" />
                 {getTotalCartProducts() > 0 && (
                   <span className="count-cart bounce">
@@ -162,7 +161,6 @@ function Header() {
           </div>
         </div>
       </header>
-
     </>
 
   )

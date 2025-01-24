@@ -5,7 +5,7 @@ import blog3 from '../assets/images/blog/blog-3.jpg'
 import blog4 from '../assets/images/blog/blog-4.jpg'
 
 
-function Customur() {
+function Customer() {
   return (
     <section className="blogs p-5">
       <div className="container-2xl mx-auto">
@@ -67,4 +67,4 @@ function Customur() {
   )
 }
 
-export default Customur
+export default Customer
