@@ -3,10 +3,11 @@ import b1 from '../assets/images/blog/b1.jpg'
 import b2 from '../assets/images/blog/b2.jpg'
 import b3 from '../assets/images/blog/b3.jpg'
 import b4 from '../assets/images/blog/b4.jpg'
+import b5 from '../assets/images/blog/b5.jpg'
 function Blog() {
   return (
     <>
-      <section className="blog-wrapper p-5">
+      <section className="blog-wrapper ">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -19,14 +20,14 @@ function Blog() {
         </div>
       </section>
 
-      <section className="blogs p-5">
-        <div className="container-xxl container">
+      <section className="blogs">
+        <div className="container-xxl ">
           <div className="row">
             <div className="d-flex flex-column align-items-center">
               <h1 className='mb-3'>Explore more in our library</h1>
               <p className='mb-4'>Why we have trending Outfits Everywhere</p>
             </div>
-            <div className="col-12 p-5">
+            <div className="col-12 ">
               <div className="card mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
@@ -43,7 +44,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div className="col-12 p-5">
+            <div className="col-12">
               <div className="card mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
@@ -60,7 +61,7 @@ function Blog() {
               </div>
             </div>
 
-            <div className="col-12 p-5">
+            <div className="col-12 ">
               <div className="card mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
@@ -77,7 +78,7 @@ function Blog() {
               </div>
             </div>
 
-            <div className="col-12 p-5">
+            <div className="col-12">
               <div className="card mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
@@ -93,11 +94,11 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div className="col-12 p-5">
+            <div className="col-12 ">
               <div className="card mb-3">
                 <div className="row g-0">
                   <div className="col-md-4">
-                    <img src={b2} alt="" className='img-fluid rounded-start' />
+                    <img src={b5} alt="" className='img-fluid rounded-start' />
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">

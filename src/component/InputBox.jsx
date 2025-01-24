@@ -8,7 +8,7 @@ import { Link } from 'react-router';
 const InputBox = () => {
   return <>
     <section className="news-letter p-5">
-      <div className="container-2xl p-5 mx-auto">
+      <div className="container-2xl  mx-auto">
         <div className="row g-3">
           <div className="col-md-4">
             <div className="d-flex flex-column align-items-center">

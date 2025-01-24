@@ -11,11 +11,9 @@ import { ShopContext } from "./ShopContext";
 function Header() {
   const { getTotalCartProducts } = useContext(ShopContext);
 
-  const lacation = useLocation()
+  const location = useLocation()
   return (
     <>
-
-
 
       <header className="header_top_strip p-1 shadow-sm">
         <div className="container-xxl">
@@ -45,11 +43,13 @@ function Header() {
         <div className="container-2xl mx-auto">
           <div className="row align-items-center">
             {/* Logo and Search Bar */}
-            <div className="col-12 d-flex justify-content-between align-items-center d-md-none">
-              <Link to="/">
-                <img src={logo} alt="logo" className="img-fluid logo" style={{ maxWidth: "100px" }} />
-              </Link>
-              <div className="input-group w-50">
+            <div className="col-12 d-flex justify-content-between align-items-center d-md-none gap-3">
+              <div className="">
+                <Link to="/">
+                  <img src={logo} alt="logo" className="img-fluid logo" style={{ maxWidth: "100px" }} />
+                </Link>
+              </div>
+              <div className="input-group  w-100 ">
                 <input
                   type="text"
                   className="form-control"
@@ -136,7 +136,7 @@ function Header() {
               {["/", "/Shop", "/Blog", "/About", "/Contact"].map((path) => (
                 <Link
                   key={path}
-                  className={`link-style ${lacation.pathname === path ? "active" : "inactive"}`}
+                  className={`link-style ${location.pathname === path ? "active" : "inactive"}`}
                   to={path}
                 >
                   {path.replace("/", "") || "Home"}
@@ -144,7 +144,7 @@ function Header() {
               ))}
             </div>
             <div className="col-md-3 d-flex justify-content-end align-items-center">
-              <Link to="/Wishlist" className="mx-2">
+              <Link to="/shop" className="mx-2">
                 <HiOutlineInboxArrowDown className="fs-3" />
               </Link>
               <Link to="/Login" className="mx-2">

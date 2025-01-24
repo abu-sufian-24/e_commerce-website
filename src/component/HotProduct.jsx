@@ -5,13 +5,13 @@ import banner1 from '../assets/images/banner/b10.jpg'
 function HotProduct() {
   return (
     <section className="hot-deals p-5 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start">
-      <div className="container-xxl">
+      <div className="container-2xl mx-auto">
         <div className="row">
-          <div className="col-md-6 d-flex">
-            <div className="card m-auto mb-3">
-              <div className="row g-0">
+          <div className="col-md-6 d-flex mt-5">
+            <div className="card m-auto ">
+              <div className="row g-3">
                 <div className="col-md-4">
-                  <img src={banner} className="img-fluid h-100 rounded-start" alt="..." />
+                  <img src={banner} className="img-fluid  rounded-start" alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -29,8 +29,8 @@ function HotProduct() {
           </div>
 
           <div className="col-md-6 d-flex">
-            <div className="card mb-3">
-              <div className="row g-0">
+            <div className="card mt-5 md:mt-0">
+              <div className="row g-3">
                 <div className="col-md-4">
                   <img src={banner1} className="img-fluid h-100 rounded-start" alt="..." />
                 </div>

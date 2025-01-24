@@ -8,7 +8,7 @@ import blog4 from '../assets/images/blog/blog-4.jpg'
 function Customur() {
   return (
     <section className="blogs p-5">
-      <div className="container-2xl mx-auto p-5">
+      <div className="container-2xl mx-auto">
         <div className="row">
           <div className="col-12 text-center">
             <h1 className="mb-3">What our customers say...</h1>

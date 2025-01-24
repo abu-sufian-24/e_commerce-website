@@ -76,16 +76,20 @@ function Fotter() {
             </div>
           </div>
           <hr />
-          <div className="row d-flex justify-content-between">
-            <div className="col-3">
-              <p>&copy; Developed by Eclar Developers 2023</p>
+          <div className="row d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div className="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0 order-2 order-md-1">
+              <p className="footer-text">&copy; Developed by Ahmeds Developers 2023</p>
             </div>
-            <div className="col-3 d-flex justify-content-around">
-              <Link className="text-black text-decoration-none">Privacy Policy</Link>
-              <Link className="text-black text-decoration-none">Terms of Use</Link>
-              <Link className="text-black text-decoration-none">Contact Us</Link>
+            <div className="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2">
+              <Link className="text-black text-decoration-none mx-2 footer-text">Privacy Policy</Link>
+              <Link className="text-black text-decoration-none mx-2 footer-text">Terms of Use</Link>
+              <Link className="text-black text-decoration-none mx-2 footer-text">Contact Us</Link>
             </div>
           </div>
+
+
+
+
         </div>
       </footer>
 

@@ -46,7 +46,7 @@ function Register() {
     navigate('/login');
   };
   return (
-    <section className="login-wrapper p-5">
+    <section className="login-wrapper">
       <div className="container-xxl">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-8 col-sm-10">

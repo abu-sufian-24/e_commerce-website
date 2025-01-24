@@ -48,8 +48,8 @@ function Contact() {
 
   return (
     <>
-      <section className="contact-wrapper p-5">
-        <div className="container-xxl">
+      <section className="contact-wrapper">
+        <div className="container-xxl mx-auto pt-5">
           <div className="row">
             <div className="col-12 text-center">
               <h1 className=" text">Reach Out to Us</h1>
@@ -59,7 +59,7 @@ function Contact() {
         </div>
       </section>
 
-      <div className="contact-wrapper-details p-5">
+      <div className="contact-wrapper-details ">
         <div className="container-xxl">
           <div className="row text-center align-items-center">
             <div className="col-lg-6 col-md-12 p-3">
@@ -78,7 +78,7 @@ function Contact() {
             </div>
 
             <div className="col-lg-6 col-md-12">
-              <div className="card p-5">
+              <div className="card mt-5 p-3">
                 <h2 className="footer-title mb-3">
                   <b>Contact Us</b>
                 </h2>
@@ -110,8 +110,8 @@ function Contact() {
         </div>
       </div>
 
-      <div className="contact-message p-5">
-        <div className="container-xxl">
+      <div className="contact-message ">
+        <div className="container-xxl mx-auto my-5">
           <div className="row">
             <div className="col-lg-8 col-md-10 col-sm-12 m-auto">
               <div className="card p-5">

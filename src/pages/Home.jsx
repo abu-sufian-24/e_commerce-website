@@ -12,36 +12,27 @@ function Home() {
     <>
       <section className="banner">
         <div className="container-2xl mx-auto px-3 px-md-5">
-          <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className="d-flex flex-column justify-content-center text-center text-md-start">
-                <div
-                  id="carouselExampleInterval"
-                  className="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div className="carousel-inner">
-                    <div className="back-details p-3 p-md-5">
-                      <p className="mb-3 text p-tag shadow-lg">Trade in offer</p>
-                      <h1 className="fs-2 fs-md-1">Super Value Deals</h1>
-                      <h2 className="fs-4 fs-md-3">On all products</h2>
-                      <p className="mb-3 fs-6">Save more today with Apneck</p>
-                      <Link to="/shop" className="btn btn-primary" id="button-link">
-                        Shop Now
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+          <div className="back-details p-3 p-md-5 d-flex flex-column  text-center ">
+            <h1 className=" ">Super Value Deals</h1>
+            <h2 className="fs-4 fs-md-3">On all products</h2>
+            <p className="mb-3 fs-6">Save more today with Apneck</p>
+            <div className=' d-inline-block'>
+              <Link to="/shop" className="btn btn-primary " id="button-link">
+                Shop Now
+              </Link>
             </div>
           </div>
+
         </div>
       </section>
+
+
 
       <Hero />
 
       <section className="featured-products p-4">
-        <div className="container-2xl px-5">
+        <div className="container-2xl mx-auto ">
           <div className="row">
             <div className="col-12 text-center product">
               <h1>Featured Products</h1>
@@ -54,7 +45,7 @@ function Home() {
 
 
       <section className="repair-services p-5">
-        <div className="container-2xl px-5">
+        <div className="container-2xl mx-auto">
           <div className="row ">
             <div className="repair-details text-center align-items-center">
               <h5 className='mb-3 text-white'>Repair Services</h5>
@@ -70,7 +61,7 @@ function Home() {
 
 
       <section className="featured-products p-4">
-        <div className="container-2xl px-5">
+        <div className="container-2xl mx-auto ">
           <div className="row">
             <div className="col-12 text-center product">
               <h1>New Arrivals</h1>

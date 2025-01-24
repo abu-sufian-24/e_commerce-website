@@ -7,7 +7,7 @@ function Shop() {
   return (
     <>
       <section className="shop-banner p-5">
-        <div className="container-xxl">
+        <div className="container-2xl mt-3">
           <div className="row justify-content-center align-items-center">
             <div className="col-md-8 col-lg-6 text-center">
               <div className="shop-details">
@@ -19,8 +19,8 @@ function Shop() {
         </div>
       </section>
 
-      <section className="featured-products p-5">
-        <div className="container-2xl">
+      <section className="featured-products p-3">
+        <div className="container-2xl mx-auto">
           <div className="row">
             <ShopItem />
           </div>

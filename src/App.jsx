@@ -9,11 +9,12 @@ import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
+import CheckOut from "./pages/CheckOut"
 import Wishlist from "./pages/Wishlist"
 import Cart from "./pages/Cart"
 import ShopContext from "./component/ShopContext"
 import Details from "./pages/Details"
-import CeekOut from "./pages/CeekOut"
+
 import Register from "./pages/Register"
 
 // function ScrollToTop() {
@@ -42,9 +43,9 @@ function App() {
               <Route path='login' element={<Login />} />
               <Route path='Cart' element={<Cart />} />
               <Route path='details' element={<Details />} />
-              <Route path='chekOut' element={<CeekOut />} />
+              <Route path='chekOut' element={<CheckOut />} />
               <Route path='register' element={<Register />} />
-              {/* <Route path='CeekOut' element={<CeekOut />} /> */}
+
             </Route>
           </Routes>
         </BrowserRouter>

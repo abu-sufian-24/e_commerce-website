@@ -12,13 +12,14 @@ const NewArrivals = () => {
 
     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 p-3">
       {Products1.slice(0, 4).map((product) => (
-        <div className="col mb-5" key={product.id}>
-          <div className="card product-card  m-auto arrival">
+        <div className="col mb-5 " key={product.id}>
+          <div className="card product-card  arrival">
             <img
               src={product.image}
-              className="card-img-top  "
+              style={{ height: '300px', objectFit: 'cover' }}
               alt={product.name}
             />
+
             <div className="card-body text-center">
               <p className="card-brand mb-2">{product.brand}</p>
               <h5 className="product-name mb-3">{product.name}</h5>

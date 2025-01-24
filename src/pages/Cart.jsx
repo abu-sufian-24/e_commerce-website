@@ -24,8 +24,8 @@ function Cart() {
 
   return (
     <>
-      <section className="cart-section p-5">
-        <div className="container-xxl">
+      <section className="cart-section ">
+        <div className="container-xxl mx-auto">
           {totalAmount > 0 ? (
             <div className="cart-container">
               <div className="header text-center mb-4">
@@ -84,7 +84,7 @@ function Cart() {
               </div>
             </div>
           ) : (
-            <div className="empty-cart text-center p-5">
+            <div className="empty-cart text-center p-5 my-5">
               <h2>Your Cart Is Empty!</h2>
               <button
                 onClick={() => navigate("/shop")}
