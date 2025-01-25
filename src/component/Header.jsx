@@ -57,7 +57,7 @@ function Header() {
                   aria-label="Find products ..."
                   aria-describedby="basic-addon2"
                 />
-                <button className="input-group-text" id="basic-addon2">
+                <button className="input-group-box" id="basic-addon2">
                   Search
                 </button>
               </div>
