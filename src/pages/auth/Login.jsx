@@ -1,13 +1,15 @@
 
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router"
-import { AuthContext } from "../context";
+
 import { toast } from "react-toastify";
+import { AuthContext } from "../../context";
+import { FaGooglePlusSquare } from "react-icons/fa";
 
 
 function Login() {
 
-  const { singin } = useContext(AuthContext)
+  const { singin, signinWithGoogle } = useContext(AuthContext)
   const navigate = useNavigate()
 
 
@@ -15,8 +17,6 @@ function Login() {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-
-
 
     singin(email, password)
       .then((result) => {
@@ -26,14 +26,28 @@ function Login() {
 
       })
       .catch((error) => {
-        toast.error(error.message)
+        toast.error(error.message);
       });
     navigate('/')
 
   };
+
+  const handleLoginWithGoogle = () => {
+    signinWithGoogle().then((result) => {
+      console.log(result)
+      toast.success("Login success")
+
+
+    })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+    navigate('/')
+  };
+
   return (
     <section className="login-wrapper my-5">
-      <div className="container-xxl">
+      <div className="container-2xl px-4">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-8 col-sm-10">
             <div className="card">
@@ -83,6 +97,22 @@ function Login() {
                     <button className=" btn btn-primary" type="submit">Login</button>
                   </div>
                 </form>
+                <div className="d-grid gap-2 mt-2">
+                  <button
+                    onClick={handleLoginWithGoogle}
+                    className="btn btn-light  border"
+                    type="submit"
+                    style={{
+                      backgroundColor: "red",
+                      color: "white",
+                      borderColor: "#4285F4",
+                      fontWeight: "bold",
+                    }}
+                  >
+
+                    Login With Google <FaGooglePlusSquare className="ms-2" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

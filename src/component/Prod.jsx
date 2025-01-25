@@ -2,14 +2,28 @@ import { useContext } from 'react';
 import ReactStars from 'react-rating-stars-component';
 
 import { ShopContext } from './ShopContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context';
 
 function Prod(props) {
   // eslint-disable-next-line react/prop-types
   const { id, name, price, image, brand } = props.data;
   const { addToCart, cartItems, viewProductDetails } = useContext(ShopContext);
-
   const cartItemAmount = cartItems[id];
+  const navigate = useNavigate()
+
+  const { user } = useContext(AuthContext)
+
+    ;
+  const handleAddToCart = (e) => {
+    if (!user) {
+      navigate("/login")
+      return;
+    }
+    addToCart(id);
+    e.target.classList.toggle('red')
+
+  }
 
   return (
     <div className="col mb-5">
@@ -40,10 +54,7 @@ function Prod(props) {
           </div>
           <div className="d-flex justify-content-center">
             <button
-              onClick={(event) => {
-                addToCart(id);
-                event.target.classList.toggle('red');
-              }}
+              onClick={(e) => handleAddToCart(e)}
               className="myButton"
             >
               Add To Cart

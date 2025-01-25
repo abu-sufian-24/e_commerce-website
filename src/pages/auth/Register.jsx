@@ -4,9 +4,10 @@
 
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router"
-import { AuthContext } from "../context";
+
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
+import { AuthContext } from "../../context";
 
 
 
@@ -46,7 +47,7 @@ function Register() {
     navigate('/login');
   };
   return (
-    <section className="login-wrapper">
+    <section className="login-wrapper my-5">
       <div className="container-xxl">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-8 col-sm-10">

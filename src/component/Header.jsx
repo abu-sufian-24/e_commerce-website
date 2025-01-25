@@ -7,11 +7,26 @@ import { IoMdContact } from "react-icons/io";
 import { FaCartPlus } from "react-icons/fa6";
 import { useContext } from "react";
 import { ShopContext } from "./ShopContext";
+import { AuthContext } from "../context";
+import Avatar from 'react-avatar';
+import { toast } from "react-toastify";
 
 function Header() {
   const { getTotalCartProducts } = useContext(ShopContext);
-
+  const { user, logOut } = useContext(AuthContext)
   const location = useLocation()
+
+  const handleLogOut = () => {
+    logOut().then((result) => {
+      console.log(result)
+      toast.success("LogOut success")
+
+
+    })
+      .catch((error) => {
+        toast.error(error.message)
+      });
+  }
   return (
     <>
       {/* fast header */}
@@ -146,10 +161,8 @@ function Header() {
               <Link to="/shop" className="mx-2">
                 <HiOutlineInboxArrowDown className="fs-3" />
               </Link>
-              <Link to="/Login" className="mx-2">
-                <IoMdContact className="fs-3" />
-              </Link>
-              <Link to="/cart" className="mx-2 position-relative">
+
+              <Link to="/cart" className="mx-3 position-relative">
                 <FaCartPlus className="fs-3 cart-icon" />
                 {getTotalCartProducts() > 0 && (
                   <span className="count-cart bounce">
@@ -157,6 +170,37 @@ function Header() {
                   </span>
                 )}
               </Link>
+
+              {
+                user ? (<>
+                  <span><Avatar size="40" name={user?.email} /></span>
+                  <button
+                    onClick={handleLogOut}
+                    className="logout-btn"
+                  >
+                    <svg
+                      className="logout-bnt-logo "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2"
+                      />
+                    </svg>
+                  </button>
+                </>)
+                  : <Link to="/Login" className="mx-3">
+                    <IoMdContact className="fs-3" />
+                  </Link>
+              }
             </div>
           </div>
         </div>
